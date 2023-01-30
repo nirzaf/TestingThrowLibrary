@@ -1,0 +1,59 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "TestingThrowLibrary/1.0.0": {
+        "dependencies": {
+          "Throw": "1.3.1"
+        },
+        "runtime": {
+          "TestingThrowLibrary.dll": {}
+        }
+      },
+      "OneOf/3.0.216": {
+        "runtime": {
+          "lib/netstandard2.0/OneOf.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Throw/1.3.1": {
+        "dependencies": {
+          "OneOf": "3.0.216"
+        },
+        "runtime": {
+          "lib/net6.0/Throw.dll": {
+            "assemblyVersion": "1.3.1.0",
+            "fileVersion": "1.3.1.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TestingThrowLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OneOf/3.0.216": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hvSxx7O9Z50ZK/HZaqxcEiO1skihnHcsziy0cVRqSq7LrETM9swcRcMZuG+0irai7jq8FYYCHTrB/pSHSah6ug==",
+      "path": "oneof/3.0.216",
+      "hashPath": "oneof.3.0.216.nupkg.sha512"
+    },
+    "Throw/1.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zFcXPEtZUShAu+PoF7lnUSzsIN4I/H7T3CqzzE1uyWgCp8u4NSzugPUIwdVIdz7wMU9B8We9iV2Jz1fyiiu48w==",
+      "path": "throw/1.3.1",
+      "hashPath": "throw.1.3.1.nupkg.sha512"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "dsfNXy9aIsLiQpe0hg3efAAnsxs838aDuSO0D7+XFkrvcBj5sKTWGoGnY1K1VtLuYpSx5AnlycMfrnhE/x/wOA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mmfazrin\\DemoProjects\\TestingThrowLibrary\\TestingThrowLibrary\\TestingThrowLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mmfazrin\\.nuget\\packages\\oneof\\3.0.216\\oneof.3.0.216.nupkg.sha512",
+    "C:\\Users\\mmfazrin\\.nuget\\packages\\throw\\1.3.1\\throw.1.3.1.nupkg.sha512"
+  ],
+  "logs": []
+}
