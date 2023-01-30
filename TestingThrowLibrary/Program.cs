@@ -4,10 +4,15 @@ using Throw;
 
 using static System.Console;
 
-WriteLine("Hello, World!");
+WriteLine("Testing Throw Validation Library.........");
 
 try
 {
+
+    Student student = new FullTimeStudent();
+    //student.Throw().IfNotType<Student>();
+    student.Throw().IfType<Student>();
+
     string? data = "Hello, World!";
     data.ThrowIfNull("data is null");
     // var input = ReadLine();
@@ -19,5 +24,17 @@ catch (Exception exception)
 {
     WriteLine(exception);
     ReadLine();
+}
+
+
+public class Student
+{
+    public string? Name { get; set; }
+    public int Age { get; set; }
+}
+
+public class FullTimeStudent : Student
+{
+    public string? Course { get; set; }
 }
 
