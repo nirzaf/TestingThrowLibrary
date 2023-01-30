@@ -16,3 +16,9 @@ C:\Users\mmfazrin\DemoProjects\TestingThrowLibrary\TestingThrowLibrary\obj\Debug
 C:\Users\mmfazrin\DemoProjects\TestingThrowLibrary\TestingThrowLibrary\obj\Debug\net7.0\TestingThrowLibrary.pdb
 C:\Users\mmfazrin\DemoProjects\TestingThrowLibrary\TestingThrowLibrary\obj\Debug\net7.0\TestingThrowLibrary.genruntimeconfig.cache
 C:\Users\mmfazrin\DemoProjects\TestingThrowLibrary\TestingThrowLibrary\obj\Debug\net7.0\ref\TestingThrowLibrary.dll
+C:\Users\mmfazrin\DemoProjects\TestingThrowLibrary\TestingThrowLibrary\bin\Debug\net7.0\Bogus.dll
+C:\Users\mmfazrin\DemoProjects\TestingThrowLibrary\TestingThrowLibrary\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\mmfazrin\DemoProjects\TestingThrowLibrary\TestingThrowLibrary\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\mmfazrin\DemoProjects\TestingThrowLibrary\TestingThrowLibrary\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\mmfazrin\DemoProjects\TestingThrowLibrary\TestingThrowLibrary\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\mmfazrin\DemoProjects\TestingThrowLibrary\TestingThrowLibrary\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
