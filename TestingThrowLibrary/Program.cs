@@ -30,12 +30,14 @@ try
     string token = provider.GenerateToken(user);
     WriteLine(token);
 
-    var claims = provider.ValidateToken(token);
+    var claims = provider.ValidateToken(token).Principal;
 
-    foreach (var items in claims!.Principal!.Claims)
+    foreach (var items in claims!.Claims)
     {
         WriteLine($"{items.Type} : {items.Value}");
     }
+    
+    //generate only alphabetic letters with length 12
 
     static string RandomQId(int length) => new Faker().Internet.Random.AlphaNumeric(length).ToLower()
         .Replace("a", "1").Replace("b", "2").Replace("c", "3").Replace("d", "4").Replace("e", "5").Replace("f", "6")
@@ -80,8 +82,7 @@ public class TokenProvider
 
 public class TokenService
 {
-    private static SymmetricSecurityKey? key = new("This is a secret key"u8.ToArray());
-
+    private static readonly SymmetricSecurityKey? key = new("This is a secret key"u8.ToArray());
     public async Task<TokenResponse> GetTokenAsync(User request)
     {
         return await GenerateTokensAndUpdateUser(request);
@@ -96,7 +97,7 @@ public class TokenService
     private string GenerateJwt(User request) =>
         GenerateEncryptedToken(GetClaims(request));
 
-    private IEnumerable<Claim> GetClaims(User request)
+    private static IEnumerable<Claim>? GetClaims(User request)
     {
         try
         {
@@ -140,7 +141,7 @@ public class TokenService
         }
     }
 
-    private string GenerateEncryptedToken(IEnumerable<Claim> claims)
+    private string GenerateEncryptedToken(IEnumerable<Claim>? claims)
     {
         var credentials = new SigningCredentials(key, HmacSha256);
 
@@ -148,7 +149,7 @@ public class TokenService
             issuer: "https://phcc.gov.qa",
             audience: "phcc.gov.qa",
             claims: claims,
-            expires: DateTime.UtcNow.AddHours(2).AddMinutes(30),
+            expires: DateTime.UtcNow.AddMinutes(30),
             signingCredentials: credentials
         );
         var tokenHandler = new JwtSecurityTokenHandler();
